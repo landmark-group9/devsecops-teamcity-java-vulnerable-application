@@ -111,6 +111,19 @@
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
 			</plugin>
+			
+	<!--# Changes for Software Composition Analysis Scan using Snyk by Oldwarri-->		
+		        <plugin>
+                           <groupId>io.snyk</groupId>
+                           <artifactId>snyk-maven-plugin</artifactId>
+                           <version>2.0.0</version>
+                           <inherited>false</inherited>
+                           <configuration>
+                           <org>oldwarri</org>
+                           </configuration>
+                        </plugin>	
+	
+			
 		</plugins>
 	</build>
 
